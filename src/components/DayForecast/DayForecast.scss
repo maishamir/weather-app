@@ -1,0 +1,42 @@
+@use "../../assets/styles/partials/typography" as *;
+@use "../../assets/styles/partials/variables" as *;
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    // background-color: orange;
+}
+
+
+.div1 {
+    background-color: pink;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.div2 {
+    background-color: aliceblue;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.div3 {
+    background-color: palevioletred;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.div4 {
+    background-color: lavender;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.div5 {
+    background-color: paleturquoise;
+    grid-column: 2;
+    grid-row: 4;
+}

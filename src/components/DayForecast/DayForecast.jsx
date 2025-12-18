@@ -11,13 +11,15 @@ function DayForecast() {
                     <p className="day-forecast__location">Berlin, Germany</p>
                     <small className="day-forecast__date">Tuesday, Aug 5, 2025</small>
 
-                    <img
-                        src={sunImg}
-                        alt="Sunny"
-                        className="day-forecast__icon"
-                    />
 
-                    <h1 className="day-forecast__temperature">20°</h1>
+
+                    <div className="day-forecast__temperature">
+                        <img
+                            src={sunImg}
+                            alt="Sunny"
+                            className="day-forecast__icon"
+                        /><p>20°</p>
+                    </div>
                 </div>
 
                 <div className="day-forecast__stats">
@@ -38,7 +40,7 @@ function DayForecast() {
 
                     <div className="day-forecast__stat">
                         <small className="day-forecast__stat-label">Precipitation</small>
-                        <p className="day-forecast__stat-value">0 in</p>
+                        <p className="day-forecast__stat-value">0 mm</p>
                     </div>
                 </div>
 

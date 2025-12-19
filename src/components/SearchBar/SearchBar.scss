@@ -33,6 +33,7 @@
 
         @include tablet {
             width: 80vw;
+            padding-right: 1.5rem;
         }
 
 
@@ -61,7 +62,7 @@
         color: white;
         border: none;
         border-radius: 0.75rem;
-        
+
         @include tablet {
             width: 20vw;
         }

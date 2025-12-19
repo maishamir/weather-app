@@ -1,5 +1,6 @@
 @use "../../assets/styles/partials/typography" as *;
 @use "../../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/mixins" as *;
 
 .dropdown {
     &__button {
@@ -15,7 +16,9 @@
 
         img {
             // height: 0.875rem;
-
+            @include tablet {
+                width: 1rem;
+            }
         }
     }
 

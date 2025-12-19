@@ -1,10 +1,15 @@
 @use "../../assets/styles/partials/variables" as *;
 @use "../../assets/styles/partials/typography" as *;
+@use "../../assets/styles/partials/mixins" as *;
 
 .header {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    
+    @include desktop {
+        gap: 4rem;
+    }
 
     &__nav {
         display: flex;
@@ -13,6 +18,11 @@
 
     &__logo {
         width: 8.625rem;
+
+        @include desktop {
+            height: 2.5rem;
+            width: 12.5rem;
+        }
     }
 
     &__title {

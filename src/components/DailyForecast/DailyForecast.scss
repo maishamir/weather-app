@@ -1,5 +1,6 @@
 @use "../../assets/styles/partials/variables" as *;
 @use "../../assets/styles/partials/typography" as *;
+@use "../../assets/styles/partials/mixins" as *;
 
 .daily-forecast {
 
@@ -15,6 +16,11 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
 
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+
     }
 
 
@@ -27,6 +33,10 @@
         align-items: center;
         padding: 1rem 0.625rem;
         gap: 1rem;
+
+        @include tablet {
+            flex: 1;
+        }
 
         &-name {
             @include tp6;

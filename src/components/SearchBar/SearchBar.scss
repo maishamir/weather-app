@@ -14,10 +14,16 @@
             justify-content: space-between;
         }
 
+        @include desktop {
+            margin-top: 4rem;
+            justify-content: center;
+        }
+
     }
 
     .input-container {
         position: relative;
+        
 
     }
 
@@ -34,6 +40,10 @@
         @include tablet {
             width: 80vw;
             padding-right: 1.5rem;
+        }
+
+        @include desktop {   
+            width: 33rem;
         }
 
 
@@ -65,6 +75,10 @@
 
         @include tablet {
             width: 20vw;
+        }
+
+        @include desktop {
+            width: auto;
         }
     }
 

@@ -1,5 +1,6 @@
 @use "../../assets/styles/partials/typography" as *;
 @use "../../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/mixins" as *;
 
 .searchBar {
     &__form {
@@ -7,6 +8,11 @@
         flex-direction: column;
         gap: 0.75rem;
         margin-top: 3rem;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
     }
 
@@ -24,6 +30,11 @@
         @include tp5-med;
         color: $neutral200;
         border-radius: 0.75rem;
+
+        @include tablet {
+            width: 80vw;
+        }
+
 
         &:focus {
             outline: none;
@@ -50,6 +61,10 @@
         color: white;
         border: none;
         border-radius: 0.75rem;
+        
+        @include tablet {
+            width: 20vw;
+        }
     }
 
 

@@ -8,8 +8,10 @@ function DayForecast() {
             <div className="day-forecast__container">
 
                 <div className="day-forecast__main">
-                    <p className="day-forecast__location">Berlin, Germany</p>
-                    <small className="day-forecast__date">Tuesday, Aug 5, 2025</small>
+                    <div className="day-forecast__loc-date">
+                        <p className="day-forecast__location">Berlin, Germany</p>
+                        <small className="day-forecast__date">Tuesday, Aug 5, 2025</small>
+                    </div>
 
 
 

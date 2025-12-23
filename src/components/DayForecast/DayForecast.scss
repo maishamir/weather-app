@@ -106,6 +106,7 @@
 
         &-value {
             color: white;
+            white-space: nowrap;
             @include tp3;
         }
     }

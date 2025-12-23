@@ -11,9 +11,13 @@ function App() {
     <main className='app'>
       <Header />
       <SearchBar />
-      <DayForecast />
-      <DailyForecast />
-      <HourlyForecast />
+      <div className="app-layout__container">
+        <div className="app-layout__left">
+          <DayForecast />
+          <DailyForecast />
+        </div>
+        <HourlyForecast />
+      </div>
     </main>
   )
 }

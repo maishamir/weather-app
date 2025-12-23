@@ -1,5 +1,6 @@
 @use "../../assets/styles/partials/typography" as *;
 @use "../../assets/styles/partials/variables" as *;
+@use "../../assets/styles/partials/mixins" as *;
 
 .hourly-forecast {
     margin-top: 2rem;
@@ -25,7 +26,6 @@
 
     &__day-picker {
         @include tp7;
-        line-height: auto;
         color: white;
         background-color: $neutral600;
         border: none;
@@ -58,6 +58,10 @@
         align-items: center;
         background-color: $neutral700;
         border-radius: 0.5rem;
+
+        @include desktop {
+            padding: 0.625rem 1rem 0.625rem 0.75rem;
+        }
 
         &-time {
             display: flex;

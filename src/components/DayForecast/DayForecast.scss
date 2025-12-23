@@ -42,6 +42,10 @@
             display: flex;
             flex-direction: column;
         }
+
+        @include desktop {
+            gap: 2rem;
+        }
     }
 
     &__main {

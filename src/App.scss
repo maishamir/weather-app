@@ -15,4 +15,25 @@
   @include desktop {
     padding: 3rem 7rem 5rem 7rem;
   }
+
+
+  &-layout__container {
+    @include desktop {
+      max-height: 45rem;
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  &-layout__left {
+    @include desktop {
+      width: 65%;
+    }
+  }
+}
+
+.hourly-forecast {
+  @include desktop {
+    width: 31%;
+  }
 }

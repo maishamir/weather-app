@@ -32,7 +32,6 @@
 
         img {
 
-            // height: 0.875rem;
             @include tablet {
                 width: 1rem;
             }
@@ -41,7 +40,6 @@
     }
 
     &__button {
-        // border: 2px solid purple;
         color: white;
         background-color: transparent;
         border: none;
@@ -50,14 +48,12 @@
     }
 
     &__fieldset {
-        // border: 2px solid orange;
         border: none;
         border-bottom: 1px solid $neutral600;
         padding-bottom: 0.25rem;
         margin-bottom: 0.25rem;
 
         &:last-of-type {
-            // background-color: red;
             border-bottom: none;
             padding-bottom: 0px;
             margin-bottom: 0px;
@@ -66,7 +62,6 @@
 
 
     &__legend {
-        // border: 2px dashed yellow;
         @include tp8;
         color: $neutral300;
         padding: 0.375rem 0.5rem 0 0.5rem;
@@ -74,7 +69,6 @@
     }
 
     &__option {
-        // border: 2px dashed violet;
         @include tp7;
         padding: 0.625rem 0.5rem;
 

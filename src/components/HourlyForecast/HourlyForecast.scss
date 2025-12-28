@@ -24,23 +24,6 @@
     }
 
 
-    &__day-picker {
-        @include tp7;
-        color: white;
-        background-color: $neutral600;
-        border: none;
-        display: flex;
-        gap: 0.75rem;
-        align-items: center;
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
-
-    }
-
-    &__arrow-icon {
-        height: 1.125rem;
-        width: 0.75rem;
-    }
 
 
     &__hours {
@@ -85,4 +68,61 @@
         }
     }
 
+}
+
+
+.day-picker {
+    position: relative;
+
+    &__trigger {
+        cursor: pointer;
+
+        display: flex;
+        gap: 0.75rem;
+        background-color: $neutral600;
+        border: none;
+        color: white;
+        @include tp7;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
+
+    &__list {
+        position: absolute;
+        top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: $neutral800;
+        box-shadow: 0px 8px 16px rgba(2, 1, 44, 0.32);
+        width: 13.375rem;
+        padding: 0.5rem;
+        border-radius: 0.75rem;
+        border: 1px solid $neutral600;
+    }
+
+    &__day {
+        display: flex;
+        @include tp7;
+        padding: 0.625rem 0.5rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+            background-color: $neutral700;
+
+        }
+
+
+    }
+
+    &__radio {
+        appearance: none;
+
+    }
+
+
+}
+
+.day-picker__day,
+label {
+    cursor: pointer;
 }
